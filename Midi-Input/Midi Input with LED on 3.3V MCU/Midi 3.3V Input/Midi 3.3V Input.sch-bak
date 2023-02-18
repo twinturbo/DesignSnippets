@@ -1,0 +1,291 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Isolator:H11L1 U3
+U 1 1 609057EC
+P 3900 3300
+F 0 "U3" H 4244 3346 50  0000 L CNN
+F 1 "H11L1" H 4244 3255 50  0000 L CNN
+F 2 "Package_DIP:DIP-6_W7.62mm_Socket_LongPads" H 3810 3300 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/H11L3M-D.PDF" H 3810 3300 50  0001 C CNN
+	1    3900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 60906B8A
+P 3900 3600
+F 0 "#PWR0122" H 3900 3350 50  0001 C CNN
+F 1 "GND" H 3905 3427 50  0000 C CNN
+F 2 "" H 3900 3600 50  0001 C CNN
+F 3 "" H 3900 3600 50  0001 C CNN
+	1    3900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0124
+U 1 1 6090BA91
+P 3900 3000
+F 0 "#PWR0124" H 3900 2850 50  0001 C CNN
+F 1 "+3.3V" H 3915 3173 50  0000 C CNN
+F 2 "" H 3900 3000 50  0001 C CNN
+F 3 "" H 3900 3000 50  0001 C CNN
+	1    3900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 6090CA44
+P 3450 3300
+F 0 "D1" V 3404 3220 50  0000 R CNN
+F 1 "1N4148" V 3495 3220 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3450 3125 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3450 3300 50  0001 C CNN
+	1    3450 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 6091488B
+P 3150 3150
+AR Path="/6091488B" Ref="R16"  Part="1" 
+AR Path="/60864F99/6091488B" Ref="R?"  Part="1" 
+F 0 "R16" H 3080 3104 50  0000 R CNN
+F 1 "220" H 3080 3195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3080 3150 50  0001 C CNN
+F 3 "~" H 3150 3150 50  0001 C CNN
+	1    3150 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3200 3600 3150
+Wire Wire Line
+	3600 3150 3450 3150
+Wire Wire Line
+	3600 3400 3600 3450
+Wire Wire Line
+	3600 3450 3450 3450
+Text GLabel 6950 3300 2    50   Output ~ 0
+RX
+Wire Wire Line
+	4600 3300 4900 3300
+$Comp
+L Device:R R17
+U 1 1 6091B6EA
+P 4600 3150
+AR Path="/6091B6EA" Ref="R17"  Part="1" 
+AR Path="/60864F99/6091B6EA" Ref="R?"  Part="1" 
+F 0 "R17" H 4670 3196 50  0000 L CNN
+F 1 "1k" H 4670 3105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4530 3150 50  0001 C CNN
+F 3 "~" H 4600 3150 50  0001 C CNN
+	1    4600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 6091C609
+P 4600 3000
+F 0 "#PWR0125" H 4600 2850 50  0001 C CNN
+F 1 "+3.3V" H 4615 3173 50  0000 C CNN
+F 2 "" H 4600 3000 50  0001 C CNN
+F 3 "" H 4600 3000 50  0001 C CNN
+	1    4600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3150 3300 3150
+Connection ~ 3450 3150
+Wire Wire Line
+	2900 3250 2900 3450
+Wire Wire Line
+	2900 3450 3450 3450
+Connection ~ 3450 3450
+Wire Wire Line
+	4200 3300 4600 3300
+Connection ~ 4600 3300
+Wire Wire Line
+	2850 3150 3000 3150
+Wire Wire Line
+	2850 3250 2900 3250
+$Comp
+L Connector_Generic:Conn_01x02 MIDI_IN1
+U 1 1 63D42613
+P 2650 3250
+AR Path="/63D42613" Ref="MIDI_IN1"  Part="1" 
+AR Path="/63D01E71/63D42613" Ref="MIDI_IN?"  Part="1" 
+F 0 "MIDI_IN1" H 2568 3017 50  0000 C CNN
+F 1 "Conn_01x02" H 2568 3016 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 2650 3250 50  0001 C CNN
+F 3 "~" H 2650 3250 50  0001 C CNN
+	1    2650 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74HC14 U9
+U 3 1 63E3CC9E
+P 5300 3750
+F 0 "U9" H 5300 4067 50  0000 C CNN
+F 1 "74HC14" H 5300 3976 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5300 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5300 3750 50  0001 C CNN
+	3    5300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U9
+U 2 1 63E3CCA4
+P 6650 3300
+F 0 "U9" H 6650 3617 50  0000 C CNN
+F 1 "74HC14" H 6650 3526 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6650 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6650 3300 50  0001 C CNN
+	2    6650 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U9
+U 1 1 63E3CCAA
+P 6050 3300
+F 0 "U9" H 6050 3617 50  0000 C CNN
+F 1 "74HC14" H 6050 3526 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6050 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6050 3300 50  0001 C CNN
+	1    6050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R91
+U 1 1 63E3CCB1
+P 6350 3550
+F 0 "R91" V 6450 3600 50  0000 C CNN
+F 1 "430R" V 6350 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 6280 3550 50  0001 C CNN
+F 3 "~" H 6350 3550 50  0001 C CNN
+	1    6350 3550
+	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q7
+U 1 1 63E3CCB7
+P 5800 3750
+F 0 "Q7" H 5991 3796 50  0000 L CNN
+F 1 "2N3904" H 5991 3705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6000 3675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 5800 3750 50  0001 L CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 63E3CCBD
+P 6050 3550
+F 0 "D6" H 6043 3295 50  0000 C CNN
+F 1 "LED" H 6043 3386 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6050 3550 50  0001 C CNN
+F 3 "~" H 6050 3550 50  0001 C CNN
+	1    6050 3550
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0174
+U 1 1 63E3CCC3
+P 5900 3950
+F 0 "#PWR0174" H 5900 3700 50  0001 C CNN
+F 1 "GND" H 5905 3777 50  0000 C CNN
+F 2 "" H 5900 3950 50  0001 C CNN
+F 3 "" H 5900 3950 50  0001 C CNN
+	1    5900 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3300 5750 3300
+Wire Wire Line
+	5000 3300 5000 3750
+Connection ~ 5000 3300
+Wire Wire Line
+	4900 3300 4900 2850
+Wire Wire Line
+	4900 2850 6900 2850
+Connection ~ 4900 3300
+Wire Wire Line
+	4900 3300 5000 3300
+$Comp
+L Device:R R92
+U 1 1 63E56FCE
+P 6900 3000
+AR Path="/63E56FCE" Ref="R92"  Part="1" 
+AR Path="/60864F99/63E56FCE" Ref="R?"  Part="1" 
+F 0 "R92" H 6970 3046 50  0000 L CNN
+F 1 "LINK" H 6970 2955 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 6830 3000 50  0001 C CNN
+F 3 "~" H 6900 3000 50  0001 C CNN
+	1    6900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3150 6900 3300
+Wire Wire Line
+	6900 3300 6950 3300
+$Comp
+L 74xx:74HC14 U?
+U 7 1 64171A99
+P 7800 3350
+F 0 "U?" H 7800 3667 50  0000 C CNN
+F 1 "74HC14" H 7800 3576 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7800 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 7800 3350 50  0001 C CNN
+	7    7800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 641737C3
+P 7800 2850
+F 0 "#PWR?" H 7800 2700 50  0001 C CNN
+F 1 "+3.3V" H 7815 3023 50  0000 C CNN
+F 2 "" H 7800 2850 50  0001 C CNN
+F 3 "" H 7800 2850 50  0001 C CNN
+	1    7800 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64174A19
+P 7800 3850
+F 0 "#PWR?" H 7800 3600 50  0001 C CNN
+F 1 "GND" H 7805 3677 50  0000 C CNN
+F 2 "" H 7800 3850 50  0001 C CNN
+F 3 "" H 7800 3850 50  0001 C CNN
+	1    7800 3850
+	1    0    0    -1  
+$EndComp
+Text Notes 7200 3300 3    50   ~ 0
+RX goes to the RX pin on your 3.3V MCU
+$Comp
+L power:+3.3V #PWR?
+U 1 1 641760A5
+P 6500 3550
+F 0 "#PWR?" H 6500 3400 50  0001 C CNN
+F 1 "+3.3V" H 6515 3723 50  0000 C CNN
+F 2 "" H 6500 3550 50  0001 C CNN
+F 3 "" H 6500 3550 50  0001 C CNN
+	1    6500 3550
+	0    1    1    0   
+$EndComp
+Text Notes 1950 2500 0    118  ~ 0
+MIDI In circuit, Takes and conditions the MIDI signal with the benefit of a tell tale LED. \nFor 3.3V Micro Controllers.
+$EndSCHEMATC
